@@ -1,0 +1,15 @@
+{% assign thisPage = page.url | split: '/' | last %}
+
+<div style="margin-top: 20px; margin-left: -5px; border-left: 3px solid #999; background: #f7f7f7; padding: 20px;">
+{% if thisPage == 'introduction' %}
+
+	<strong><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Training &amp; Certification</strong><br /><br />
+	Take your Calico skills to the next level with Tigera's training and professional certification.<br /><br />
+	<a href="https://tigera.io/training" target="_blank" style="color: #f69432;">View Courses</a>
+
+{% else %}
+	<strong><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Training &amp; Certification</strong><br /><br />
+	<a href="https://tigera.io/training" target="_blank" style="color: #f69432;">View Courses</a>
+
+{% endif %}
+</div>
